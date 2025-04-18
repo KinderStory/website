@@ -1,0 +1,62 @@
+name: kinderstory_website
+description: Landing Page für die KinderStory App
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # UI Packages
+  flutter_sizer: ^1.0.5
+  google_fonts: ^5.1.0
+  cached_network_image: ^3.3.0
+  url_launcher: ^6.1.12
+  flutter_svg: ^2.0.7
+  responsive_builder: ^0.7.0
+  firebase_auth: ^5.1.2
+  firebase_storage: ^12.4.5
+  cloud_firestore: ^5.1.0
+  firebase_core: ^3.12.1
+  permission_handler: ^11.4.0
+  flutter_tts: ^3.8.5
+  audioplayers: ^5.2.1
+  flutter_dotenv: ^5.1.0  # Zum Speichern des API-Keys
+  flutter_launcher_icons: ^0.14.3
+  # Andere
+  get: ^4.6.5
+  http: ^1.1.0
+  intl: ^0.18.1
+  provider: ^6.0.5
+  shared_preferences: ^2.2.0
+  font_awesome_flutter: ^10.7.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.2
+
+
+flutter_icons:
+
+  web:
+    generate: true
+    image_path: "assets/images/logo.png"
+    background_color: "#FFFFFF"
+    theme_color: "#FFFFFF"
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/icons/
+
+  # Falls du Schriftarten hinzufügen möchtest:
+  # fonts:
+  #   - family: IndieFlower
+  #     fonts:
+  #       - asset: assets/fonts/IndieFlower-Regular.ttf
