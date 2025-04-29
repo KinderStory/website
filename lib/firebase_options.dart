@@ -14,12 +14,12 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-      apiKey: "AIzaSyCnHnoW-ZGr9jQFnaPcIAcaFdvE1sowGvs",
+      apiKey: ",
       authDomain: "kinderstory-4e5ee.firebaseapp.com",
       projectId: "kinderstory-4e5ee",
       storageBucket: "kinderstory-4e5ee.firebasestorage.app",
-      messagingSenderId: "477520693450",
-      appId: "1:477520693450:web:f94171c43e32df64a68c33",
-      measurementId: "G-X3SZ6F2B73"
+      messagingSenderId: "",
+      appId: "",
+      measurementId: ""
   );
 }
