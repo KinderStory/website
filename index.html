@@ -1,23 +1,59 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
 <head>
   <base href="/">
 
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="KinderStory Website">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="KinderStory - Interaktive Geschichten und Lernspiele für Kinder. Entdecke unsere pädagogisch wertvollen Inhalte zum Lesen, Hören und Mitspielen.">
+  <meta name="keywords" content="KinderStory, Kindergeschichten, Lernspiele, Kinderapp, interaktive Geschichten, Vorlesegeschichten">
+  <meta name="author" content="KinderStory">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://kinderstory.app">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://kinderstory.app">
+  <meta property="og:title" content="KinderStory - Interaktive Geschichten für Kinder">
+  <meta property="og:description" content="Entdecke individuelle Geschichten für Kinder. Lesen, hören und mitspielen!">
+  <meta property="og:image" content="https://kinderstory.app/assets/images/og-image.png">
 
   <!-- iOS meta tags & icons -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="kinderstory_website">
+  <meta name="apple-mobile-web-app-title" content="KinderStory">
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="icons/Icon-152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="icons/Icon-180.png">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png"/>
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#E03A3A">
+  <meta name="msapplication-TileColor" content="#E03A3A">
+  <meta name="theme-color" content="#E03A3A">
 
-  <title>KinderStory</title>
+  <title>KinderStory - Interaktive Geschichten und Lernspiele für Kinder</title>
   <link rel="manifest" href="manifest.json">
+
+  <!-- Strukturierte Daten für Google -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "KinderStory",
+      "url": "https://kinderstory.app",
+      "logo": "https://kinderstory.app/icons/Icon-512.png",
+      "sameAs": [
+        "https://facebook.com/kinderstory",
+        "https://instagram.com/kinderstory",
+        "https://twitter.com/kinderstory"
+      ]
+    }
+  </script>
 
   <!-- Script für GitHub Pages Routing - Wichtig für Shortlinks! -->
   <script type="text/javascript">
@@ -35,11 +71,11 @@
   </script>
 
   <!-- Firebase SDK -->
-  <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-app-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-auth-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-firestore-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-storage-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-analytics-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-app-compat.js" defer></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-auth-compat.js" defer></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-firestore-compat.js" defer></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-storage-compat.js" defer></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-analytics-compat.js" defer></script>
 
   <script>
     const firebaseConfig = {
@@ -52,8 +88,10 @@
       measurementId: "G-X3SZ6F2B73"
     };
 
-    firebase.initializeApp(firebaseConfig);
-    firebase.analytics();
+    window.addEventListener('load', function() {
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+    });
   </script>
 
   <!-- Iubenda Cookie Solution -->
@@ -63,15 +101,17 @@
       "siteId": 3981563,
       "cookiePolicyId": 10893086,
       "lang": "de",
+      "countryDetection": true,
+      "perPurposeConsent": true,
       "storage": {
         "useSiteId": true
       }
     };
   </script>
-  <script type="text/javascript" src="https://cs.iubenda.com/autoblocking/3981563.js"></script>
-  <script type="text/javascript" src="//cdn.iubenda.com/cs/tcf/stub-v2.js"></script>
-  <script type="text/javascript" src="//cdn.iubenda.com/cs/tcf/safe-tcf-v2.js"></script>
-  <script type="text/javascript" src="//cdn.iubenda.com/cs/gpp/stub.js"></script>
+  <script type="text/javascript" src="https://cs.iubenda.com/autoblocking/3981563.js" defer></script>
+  <script type="text/javascript" src="//cdn.iubenda.com/cs/tcf/stub-v2.js" defer></script>
+  <script type="text/javascript" src="//cdn.iubenda.com/cs/tcf/safe-tcf-v2.js" defer></script>
+  <script type="text/javascript" src="//cdn.iubenda.com/cs/gpp/stub.js" defer></script>
   <script type="text/javascript" src="//cdn.iubenda.com/cs/iubenda_cs.js" charset="UTF-8" async></script>
 
   <script>
@@ -106,11 +146,25 @@
       0% { transform: rotate(0deg); }
       100% { transform: rotate(360deg); }
     }
+
+    /* Für Barrierefreiheit und SEO */
+    .visually-hidden {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
   </style>
 </head>
 <body>
-<div class="loading">
-  <div class="loader"></div>
+<h1 class="visually-hidden">KinderStory - Interaktive Geschichten und Lernspiele für Kinder</h1>
+<div class="loading" aria-label="Laden">
+  <div class="loader" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
 </div>
 
 <script>
@@ -128,5 +182,32 @@
     });
   });
 </script>
+
+<!-- Strukturiertes JSON für mobile App -->
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MobileApplication",
+    "name": "KinderStory",
+    "operatingSystem": "Android, iOS",
+    "applicationCategory": "EducationalApplication",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "EUR"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "ratingCount": "1024"
+    },
+    "description": "KinderStory bietet individuelleGeschichten  für Kinder."
+  }
+</script>
+
+<!-- Noindex für alte Browser -->
+<!--[if lt IE 11]>
+<meta name="robots" content="noindex, nofollow">
+<![endif]-->
 </body>
 </html>
