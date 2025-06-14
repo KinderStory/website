@@ -71963,10 +71963,10 @@ A.ahh.prototype={
 $0(){return A.l_(A.df("https://apps.apple.com",0,null))},
 $S:0}
 A.ahc.prototype={
-$0(){return A.l_(A.df("https://play.google.com/store",0,null))},
+$0(){return A.l_(A.df("https://play.google.com/store/apps/details?id=com.kinderstory.app",0,null))},
 $S:0}
 A.ahd.prototype={
-$0(){return A.l_(A.df("https://apps.apple.com",0,null))},
+$0(){return A.l_(A.df("https://apps.apple.com/us/app/kinderstory/id6744348294",0,null))},
 $S:0}
 A.ahe.prototype={
 $3(a,b,c){var s=null
